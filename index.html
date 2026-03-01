@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Macon 24hr Mobile Residential Rekey Locksmith – Professional home rekey & lock change services in Macon, GA. Clear pricing, 20+ years experience.">
+<title>Macon 24hr Mobile Residential Rekey Locksmith</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #7b1113;
+  --primary-dark: #5a0d0e;
+  --primary-light: #9e1518;
+  --accent: #c5a059;
+  --accent-hover: #b08d45;
+  --accent-light: #f0e6cc;
+  --text-main: #1a1a2e;
+  --text-muted: #6b7280;
+  --bg-light: #fdf8f2;
+  --bg-section: #f9f4ee;
+  --white: #ffffff;
+  --border: #e5d9cc;
+  --shadow-sm: 0 2px 8px rgba(123,17,19,0.08);
+  --shadow-md: 0 8px 24px rgba(123,17,19,0.12);
+  --shadow-lg: 0 16px 48px rgba(123,17,19,0.16);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --header-h: 72px;
+  --header-h-mobile: 60px;
+  --max-w: 1200px;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--text-main);background:var(--bg-light);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ── CONTAINER ── */
+.container{width:100%;max-width:var(--max-w);margin-inline:auto;padding-inline:24px}
+
+/* ── NAVBAR ── */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--header-h);background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm);transition:all .3s ease}
+#navbar.scrolled{height:64px;box-shadow:var(--shadow-md)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%}
+.nav-logo{display:flex;flex-direction:column;gap:1px}
+.nav-logo .logo-top{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--primary);line-height:1.1}
+.nav-logo .logo-sub{font-size:.7rem;color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links > li{position:relative}
+.nav-links a,.nav-links button{font-size:.92rem;font-weight:600;color:var(--text-main);padding:8px 14px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:5px;background:none}
+.nav-links a:hover,.nav-links button:hover{color:var(--primary);background:rgba(123,17,19,.06)}
+.nav-links .dropdown-btn svg{transition:transform .2s}
+.nav-links .dropdown-btn.open svg{transform:rotate(180deg)}
+.dropdown-menu{position:absolute;top:calc(100% + 8px);left:0;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-md);min-width:220px;padding:8px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:all .2s}
+.dropdown-menu.open{opacity:1;pointer-events:all;transform:translateY(0)}
+.dropdown-menu a{display:block;padding:9px 14px;border-radius:8px;font-size:.88rem;font-weight:500;color:var(--text-main);transition:all .2s}
+.dropdown-menu a:hover{background:rgba(123,17,19,.06);color:var(--primary);padding-left:18px}
+.nav-cta{display:inline-flex;align-items:center;gap:6px;margin-left:12px;background:var(--primary)!important;color:var(--white)!important;border-radius:8px;padding:9px 18px!important;font-weight:700!important;font-size:.9rem}
+.nav-cta:hover{background:var(--primary-dark)!important}
+/* Floating call button */
+#floatCall{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:none;align-items:center;gap:10px;background:var(--primary);color:var(--white);font-family:var(--font-body);font-weight:700;font-size:1rem;padding:14px 28px;border-radius:50px;box-shadow:0 6px 28px rgba(123,17,19,.45);z-index:600;text-decoration:none;white-space:nowrap;animation:floatPulse 2.5s ease-in-out infinite}
+#floatCall .fc-dot{width:9px;height:9px;background:#4ade80;border-radius:50%;flex-shrink:0;animation:dotPulse 1.5s ease-in-out infinite}
+@keyframes floatPulse{0%,100%{box-shadow:0 6px 28px rgba(123,17,19,.45)}50%{box-shadow:0 8px 36px rgba(123,17,19,.65)}}
+@keyframes dotPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.75)}}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;border-radius:8px;cursor:pointer;transition:.2s}
+.hamburger span{display:block;width:24px;height:2px;background:var(--text-main);border-radius:2px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:var(--header-h-mobile);left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:16px 24px 24px;z-index:999;box-shadow:var(--shadow-md)}
+.mobile-menu.open{display:block}
+.mobile-menu a,.mobile-menu button{display:block;width:100%;text-align:left;padding:12px 0;font-size:1rem;font-weight:600;border-bottom:1px solid var(--border);color:var(--text-main);background:none}
+.mobile-menu .mobile-submenu{padding-left:16px}
+.mobile-menu .mobile-submenu a{font-size:.9rem;font-weight:500;border-bottom:none;padding:8px 0;color:var(--text-muted)}
+.mobile-cta-row{margin-top:16px}
+.mobile-cta-row a{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--primary);color:var(--white);padding:14px 24px;border-radius:10px;font-weight:700;font-size:1rem;width:100%;border-bottom:none!important}
+
+/* ── HERO ── */
+#home{padding-top:var(--header-h)}
+.hero{min-height:calc(100vh - var(--header-h));background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 50%,#a01820 100%);position:relative;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:80px;background:var(--bg-light);clip-path:ellipse(55% 100% at 50% 100%)}
+.hero-content{position:relative;z-index:1;max-width:720px;color:var(--white);padding-block:80px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(197,160,89,.2);border:1px solid rgba(197,160,89,.4);color:var(--accent);padding:6px 16px;border-radius:50px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:24px;animation:fadeUp .6s ease both}
+.hero-badge svg{flex-shrink:0}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.2rem,5vw,3.8rem);font-weight:700;line-height:1.15;margin-bottom:20px;animation:fadeUp .7s .1s ease both}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p{font-size:clamp(1rem,2vw,1.18rem);opacity:.9;margin-bottom:36px;max-width:560px;animation:fadeUp .7s .2s ease both}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;animation:fadeUp .7s .3s ease both}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--text-main);font-weight:700;padding:14px 28px;border-radius:10px;font-size:1rem;transition:all .2s;box-shadow:0 4px 16px rgba(197,160,89,.4)}
+.btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 24px rgba(197,160,89,.5)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:2px solid rgba(255,255,255,.5);color:var(--white);font-weight:600;padding:13px 26px;border-radius:10px;font-size:1rem;transition:all .2s}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:32px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(255,255,255,.15);animation:fadeUp .7s .4s ease both}
+.hero-stat-num{font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:var(--accent);line-height:1}
+.hero-stat-label{font-size:.82rem;opacity:.75;margin-top:4px;text-transform:uppercase;letter-spacing:.04em}
+
+/* ── SECTION COMMONS ── */
+section{padding-block:80px}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:12px}
+.section-label::before{content:'';width:24px;height:2px;background:var(--accent);display:block}
+h2.section-title{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:var(--text-main);line-height:1.2;margin-bottom:16px}
+h2.section-title span{color:var(--primary)}
+.section-sub{font-size:1.05rem;color:var(--text-muted);max-width:600px}
+.section-header{margin-bottom:52px}
+
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--primary);padding-block:20px}
+.trust-bar-inner{display:flex;flex-wrap:wrap;justify-content:center;gap:32px}
+.trust-item{display:flex;align-items:center;gap:10px;color:var(--white);font-size:.9rem;font-weight:600}
+.trust-item svg{color:var(--accent);flex-shrink:0}
+
+/* ── SERVICES ── */
+#services{background:var(--bg-section)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.service-card{background:var(--white);border-radius:var(--radius-lg);padding:32px 28px;border:1px solid var(--border);box-shadow:var(--shadow-sm);transition:all .3s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--accent))}
+.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:rgba(123,17,19,.15)}
+.service-icon{width:52px;height:52px;background:rgba(123,17,19,.06);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--primary);transition:.3s}
+.service-card:hover .service-icon{background:var(--primary);color:var(--white)}
+.service-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;margin-bottom:10px;color:var(--text-main)}
+.service-card p{font-size:.9rem;color:var(--text-muted);line-height:1.6}
+.service-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.service-tag{font-size:.75rem;font-weight:600;background:var(--accent-light);color:var(--primary-dark);padding:3px 10px;border-radius:50px}
+
+/* ── ABOUT ── */
+#about{background:var(--bg-light)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-visual{position:relative}
+.about-card-main{background:var(--primary);border-radius:var(--radius-lg);padding:48px 40px;color:var(--white);position:relative;overflow:hidden}
+.about-card-main::after{content:'';position:absolute;bottom:-30px;right:-30px;width:160px;height:160px;background:rgba(255,255,255,.04);border-radius:50%}
+.about-card-main .quote-icon{font-size:4rem;color:var(--accent);font-family:Georgia,serif;line-height:1;margin-bottom:16px}
+.about-card-main p{font-size:1.05rem;line-height:1.75;opacity:.95;position:relative;z-index:1}
+.about-card-main .author{margin-top:24px;display:flex;align-items:center;gap:12px;border-top:1px solid rgba(255,255,255,.15);padding-top:20px}
+.author-avatar{width:48px;height:48px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:1.1rem;color:var(--primary-dark);flex-shrink:0}
+.author-info .name{font-weight:700;font-size:.95rem}
+.author-info .role{font-size:.8rem;opacity:.7}
+.about-float-badge{position:absolute;bottom:-20px;right:-20px;background:var(--accent);color:var(--primary-dark);border-radius:var(--radius);padding:16px 20px;font-weight:700;font-size:.85rem;text-align:center;box-shadow:var(--shadow-md)}
+.about-float-badge .num{font-family:var(--font-display);font-size:2rem;display:block;line-height:1}
+.about-content h2{margin-bottom:20px}
+.about-content p{color:var(--text-muted);margin-bottom:16px;font-size:1rem}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.about-feat{display:flex;align-items:flex-start;gap:12px}
+.about-feat-icon{width:36px;height:36px;background:rgba(123,17,19,.06);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--primary);flex-shrink:0;margin-top:2px}
+.about-feat h4{font-size:.9rem;font-weight:700;margin-bottom:2px}
+.about-feat p{font-size:.82rem;color:var(--text-muted);margin:0}
+
+/* ── WHY CHOOSE ── */
+.why-section{background:var(--bg-section);padding-block:80px}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.why-card{background:var(--white);border-radius:var(--radius-lg);padding:32px 26px;border:1px solid var(--border);text-align:center;transition:.3s}
+.why-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.why-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--white);box-shadow:var(--shadow-sm)}
+.why-card h3{font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:10px}
+.why-card p{font-size:.88rem;color:var(--text-muted)}
+
+/* ── SERVICE AREAS ── */
+.areas-section{background:var(--primary);padding-block:60px;text-align:center}
+.areas-section .section-label{justify-content:center;color:var(--accent)}
+.areas-section .section-label::before{background:var(--accent)}
+.areas-section h2{color:var(--white);text-align:center}
+.areas-section h2 span{color:var(--accent)}
+.areas-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:36px}
+.area-chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--white);padding:10px 22px;border-radius:50px;font-size:.9rem;font-weight:600;transition:.2s;display:flex;align-items:center;gap:6px}
+.area-chip:hover{background:var(--accent);border-color:var(--accent);color:var(--primary-dark)}
+
+/* ── REVIEWS ── */
+#reviews{background:var(--bg-light)}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.review-card{background:var(--white);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);box-shadow:var(--shadow-sm);transition:.3s}
+.review-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.review-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.reviewer-avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;color:var(--white);font-size:1rem;flex-shrink:0}
+.reviewer-info .reviewer-name{font-weight:700;font-size:.95rem}
+.reviewer-info .review-date{font-size:.78rem;color:var(--text-muted);margin-top:2px}
+.stars{color:var(--accent);font-size:1.1rem;margin-bottom:10px;letter-spacing:2px}
+.review-text{font-size:.9rem;color:var(--text-muted);line-height:1.65;font-style:italic}
+.review-source{margin-top:14px;display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--text-muted);font-weight:600}
+.review-source svg{color:#4285f4}
+.reviews-summary{background:var(--primary);border-radius:var(--radius-lg);padding:32px;color:var(--white);text-align:center;margin-bottom:40px;display:flex;flex-wrap:wrap;justify-content:center;gap:40px}
+.rsummary-item .rs-num{font-family:var(--font-display);font-size:2.8rem;font-weight:700;color:var(--accent);line-height:1}
+.rsummary-item .rs-label{font-size:.82rem;opacity:.75;text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+
+/* ── COUPONS ── */
+#coupons{background:var(--bg-section)}
+.coupons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.coupon-card{background:var(--white);border-radius:var(--radius-lg);border:2px dashed var(--border);overflow:hidden;transition:.3s;position:relative}
+.coupon-card:hover{border-color:var(--primary);box-shadow:var(--shadow-md)}
+.coupon-top{background:var(--primary);padding:24px 28px;color:var(--white);position:relative}
+.coupon-top::after{content:'';position:absolute;bottom:-14px;left:0;right:0;height:28px;background:var(--white);clip-path:polygon(0 0,100% 0,100% 100%,95% 60%,90% 100%,85% 60%,80% 100%,75% 60%,70% 100%,65% 60%,60% 100%,55% 60%,50% 100%,45% 60%,40% 100%,35% 60%,30% 100%,25% 60%,20% 100%,15% 60%,10% 100%,5% 60%,0 100%)}
+.coupon-badge{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:8px}
+.coupon-value{font-family:var(--font-display);font-size:2.4rem;font-weight:700;line-height:1;color:var(--white)}
+.coupon-value span{font-size:1rem;opacity:.8}
+.coupon-desc{font-size:.85rem;opacity:.8;margin-top:6px}
+.coupon-bottom{padding:28px 28px 24px;margin-top:14px}
+.coupon-bottom h4{font-family:var(--font-display);font-size:1.05rem;font-weight:700;margin-bottom:8px;color:var(--text-main)}
+.coupon-bottom p{font-size:.85rem;color:var(--text-muted);margin-bottom:16px}
+.coupon-code-row{display:flex;align-items:center;gap:8px}
+.coupon-code{background:var(--accent-light);border:1px solid var(--border);border-radius:6px;padding:8px 14px;font-size:.85rem;font-weight:700;color:var(--primary-dark);font-family:monospace;flex:1;text-align:center;letter-spacing:.08em}
+.copy-btn{background:var(--primary);color:var(--white);border-radius:6px;padding:8px 14px;font-size:.78rem;font-weight:700;transition:.2s;white-space:nowrap}
+.copy-btn:hover{background:var(--primary-dark)}
+.coupon-expires{font-size:.75rem;color:var(--text-muted);margin-top:10px;display:flex;align-items:center;gap:4px}
+
+/* ── FAQ ── */
+#faq{background:var(--bg-light)}
+.faq-list{max-width:800px;margin-inline:auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:.2s}
+.faq-item:hover{border-color:rgba(123,17,19,.2)}
+.faq-item.open{border-color:var(--primary)}
+.faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;font-size:1rem;font-weight:700;color:var(--text-main);text-align:left;cursor:pointer;background:none;border:none;font-family:var(--font-body)}
+.faq-question .faq-icon{width:28px;height:28px;background:rgba(123,17,19,.06);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);flex-shrink:0;transition:.3s}
+.faq-item.open .faq-question{color:var(--primary)}
+.faq-item.open .faq-icon{background:var(--primary);color:var(--white);transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-answer-inner{padding:0 24px 22px;font-size:.93rem;color:var(--text-muted);line-height:1.7}
+
+/* ── CONTACT ── */
+#contact{background:var(--bg-section)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:40px;align-items:start}
+.ci-card{display:flex;align-items:flex-start;gap:16px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:12px;transition:.2s}
+.ci-card:hover{border-color:rgba(123,17,19,.2);box-shadow:var(--shadow-sm)}
+.cic-icon{font-size:1.4rem;flex-shrink:0;width:40px;text-align:center;margin-top:2px}
+.cic-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-bottom:3px}
+.cic-value{font-size:1rem;font-weight:700;color:var(--text-main);line-height:1.4}
+.cic-sub{font-size:.82rem;color:var(--text-muted);margin-top:2px}
+.hours-badge{display:inline-flex;align-items:center;gap:5px;background:#dcfce7;color:#166534;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:50px}
+.contact-form{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px 32px;box-shadow:var(--shadow-sm)}
+.contact-form h3{font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--text-main);margin-bottom:24px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.form-group label{font-size:.85rem;font-weight:700;color:var(--text-main)}
+.form-group input,.form-group select,.form-group textarea{padding:11px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font-body);font-size:.92rem;color:var(--text-main);background:var(--bg-light);transition:.2s;outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary);background:var(--white);box-shadow:0 0 0 3px rgba(123,17,19,.07)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#b0b8c1}
+.form-group textarea{min-height:100px;resize:vertical}
+.form-group select{cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;background-color:var(--bg-light)}
+.consent-group{margin-top:4px}
+.consent-checkbox{display:flex;align-items:flex-start;gap:10px;cursor:pointer}
+.consent-checkbox input[type="checkbox"]{width:16px;height:16px;flex-shrink:0;margin-top:3px;accent-color:var(--primary);cursor:pointer}
+.consent-checkbox span{font-size:.78rem;color:var(--text-muted);line-height:1.5}
+.submit-btn{width:100%;padding:15px;background:var(--primary);color:var(--white);font-family:var(--font-body);font-size:1rem;font-weight:700;border:none;border-radius:10px;cursor:pointer;margin-top:8px;letter-spacing:.04em;transition:.2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.submit-btn:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.form-note{font-size:.82rem;color:var(--text-muted);text-align:center;margin-top:12px}
+.form-note a{color:var(--primary);font-weight:600}
+.map-container{border-radius:var(--radius-lg);overflow:hidden;border:2px solid var(--border);box-shadow:var(--shadow-md)}
+.map-container iframe{width:100%;height:400px;display:block;border:none}
+
+/* ── CTA BANNER ── */
+.cta-banner{background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding-block:72px;text-align:center;color:var(--white);position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:rgba(255,255,255,.03);border-radius:50%}
+.cta-banner h2{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;margin-bottom:14px}
+.cta-banner p{font-size:1.05rem;opacity:.85;margin-bottom:32px;max-width:520px;margin-inline:auto}
+.cta-banner .phone-link{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;color:var(--accent);margin-bottom:28px}
+.cta-banner .btn-primary{font-size:1.1rem;padding:16px 36px}
+
+/* ── FOOTER ── */
+footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand .logo-top{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--accent);margin-bottom:4px}
+.footer-brand .logo-sub{font-size:.72rem;color:rgba(255,255,255,.5);letter-spacing:.08em;text-transform:uppercase}
+.footer-brand p{margin-top:14px;font-size:.88rem;opacity:.65;line-height:1.6}
+.footer-brand .footer-phone{margin-top:16px;display:flex;align-items:center;gap:8px;font-weight:700;font-size:1rem;color:var(--accent)}
+.footer-col h4{font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.4);margin-bottom:16px}
+.footer-col ul{display:flex;flex-direction:column;gap:8px}
+.footer-col ul li a{font-size:.88rem;opacity:.7;transition:.2s;line-height:1.4}
+.footer-col ul li a:hover{opacity:1;color:var(--accent)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-size:.8rem;opacity:.5}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  :root{--header-h:var(--header-h-mobile)}
+  section{padding-block:56px}
+  .nav-links,.nav-cta{display:none}
+  #floatCall{display:inline-flex}
+  #scrollTop{bottom:90px}
+  .hamburger{display:flex}
+  .hero-stats{gap:20px}
+  .about-features{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .reviews-summary{gap:24px}
+  .map-container iframe{height:300px}
+}
+@media(max-width:480px){
+  .container{padding-inline:16px}
+  .hero-actions{flex-direction:column}
+  .btn-primary,.btn-outline{justify-content:center}
+  .form-row{grid-template-columns:1fr}
+  .contact-form{padding:24px 20px}
+}
+
+/* ── SCROLL TO TOP ── */
+#scrollTop{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--primary);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);opacity:0;pointer-events:none;transition:.3s;z-index:500;cursor:pointer}
+#scrollTop.visible{opacity:1;pointer-events:all}
+#scrollTop:hover{background:var(--primary-dark);transform:translateY(-2px)}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Home">
+      <span class="logo-top">Macon 24hr Locksmith</span>
+      <span class="logo-sub">Mobile Residential Rekey</span>
+    </a>
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="#home" role="menuitem">Home</a></li>
+      <li role="none" style="position:relative">
+        <button class="dropdown-btn" role="menuitem" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown(this)">
+          Services
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li role="none"><a href="#rekey" role="menuitem">Rekey Service</a></li>
+          <li role="none"><a href="#lockchange" role="menuitem">Lock Change & Replacement</a></li>
+          <li role="none"><a href="#installation" role="menuitem">Fresh Lock Installation</a></li>
+          <li role="none"><a href="#smartlock" role="menuitem">Smart Lock Installation</a></li>
+          <li role="none"><a href="#lockout" role="menuitem">House Lockout Service</a></li>
+          <li role="none"><a href="#extraction" role="menuitem">Broken Key Extraction</a></li>
+          <li role="none"><a href="#garage" role="menuitem">Garage Door Locks</a></li>
+        </ul>
+      </li>
+      <li role="none"><a href="#about" role="menuitem">About</a></li>
+      <li role="none"><a href="#contact" role="menuitem">Contact Us</a></li>
+      <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+    </ul>
+    <a href="tel:4787394334" class="nav-cta" style="align-items:center;gap:6px;">
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      (478) 739-4334
+    </a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobile(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <button onclick="toggleMobileServices(this)" style="color:var(--text-main);font-size:1rem;font-weight:600;border-bottom:1px solid var(--border);padding:12px 0;width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center">
+    Services
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
+  <div class="mobile-submenu" id="mobileServices" style="display:none">
+    <a href="#rekey" onclick="closeMobile()">Rekey Service</a>
+    <a href="#lockchange" onclick="closeMobile()">Lock Change & Replacement</a>
+    <a href="#installation" onclick="closeMobile()">Fresh Lock Installation</a>
+    <a href="#smartlock" onclick="closeMobile()">Smart Lock Installation</a>
+    <a href="#lockout" onclick="closeMobile()">House Lockout Service</a>
+    <a href="#extraction" onclick="closeMobile()">Broken Key Extraction</a>
+    <a href="#garage" onclick="closeMobile()">Garage Door Locks</a>
+  </div>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#contact" onclick="closeMobile()">Contact Us</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <div class="mobile-cta-row">
+    <a href="tel:4787394334" onclick="closeMobile()">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now: (478) 739-4334
+    </a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Macon, GA's Trusted Residential Locksmith
+        </div>
+        <h1>Your Home Security Is Our <em>Only</em> Priority</h1>
+        <p><strong>Mobile Residential Locksmith Macon</strong> provides professional home rekey, lock change, and emergency lockout services across Macon, GA — mobile service, honest pricing, and 20+ years of hands-on experience.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;animation:fadeUp .7s .25s ease both">
+          <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(197,160,89,.18);border:1px solid rgba(197,160,89,.35);color:rgba(255,255,255,.93);padding:7px 15px;border-radius:8px;font-size:.83rem;font-weight:600;"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Licensed &amp; Insured Mobile Locksmith</span>
+          <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9);padding:7px 15px;border-radius:8px;font-size:.83rem;font-weight:600;"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Calls answered in ~30 sec · Immediate dispatch</span>
+        </div>
+        <div class="hero-actions">
+          <a href="tel:4787394334" class="btn-primary">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call (478) 739-4334
+          </a>
+          <a href="#services" class="btn-outline">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            View Services
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">20+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">24hr</div>
+            <div class="hero-stat-label">Mobile Service</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Residential Focus</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">5★</div>
+            <div class="hero-stat-label">Rated Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container trust-bar-inner">
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Residential Specialists Only
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Upfront, Honest Pricing
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      Mobile Service – We Come to You
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Fast 5–15 Min Lockouts
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+      No Surprises. No Hidden Fees.
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Residential Locksmith <span>Services</span></h2>
+      <p class="section-sub">We are not a general locksmith company trying to do everything. Our primary focus is residential service — helping homeowners in Macon feel safe and secure.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card fade-up" id="rekey">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+        </div>
+        <h3>Rekey Service</h3>
+        <p>Change who has access to your home without replacing all your locks. We reset your locks so old keys no longer work and new keys control access.</p>
+        <div class="service-tags">
+          <span class="service-tag">New Home Move-In</span>
+          <span class="service-tag">Lost Keys</span>
+          <span class="service-tag">Tenant Turnover</span>
+          <span class="service-tag">Divorce / Separation</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" id="lockchange">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>Lock Change & Replacement</h3>
+        <p>Old, worn out, damaged, or outdated locks? We install high-quality residential hardware in a variety of finishes and styles. We can replace deadbolts, upgrade security, match hardware, or key multiple locks alike.</p>
+        <div class="service-tags">
+          <span class="service-tag">Deadbolt Replacement</span>
+          <span class="service-tag">Security Upgrade</span>
+          <span class="service-tag">Keyed Alike</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" id="installation">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </div>
+        <h3>Fresh Lock Installation</h3>
+        <p>Need to add a deadbolt where one doesn't exist? We perform precise fresh installations on exterior and interior doors, ensuring proper alignment and secure mounting for long-term durability.</p>
+        <div class="service-tags">
+          <span class="service-tag">Front Doors</span>
+          <span class="service-tag">Side Doors</span>
+          <span class="service-tag">Garage Entry</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" id="smartlock">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01M8.5 7h7M8.5 10h7M8.5 13h4"/></svg>
+        </div>
+        <h3>Smart Lock Installation</h3>
+        <p>Convenience meets security. We install trusted smart lock brands and can often key them to match your existing house key system. Perfect for front doors and garage entry doors.</p>
+        <div class="service-tags">
+          <span class="service-tag">Keypad Locks</span>
+          <span class="service-tag">App-Enabled</span>
+          <span class="service-tag">Key Matched</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" id="lockout">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        </div>
+        <h3>House Lockout Service</h3>
+        <p>Locked out of your home? Most residential lockouts take just 5–15 minutes depending on the lock type. Our goal is always damage-free entry whenever possible using professional tools.</p>
+        <div class="service-tags">
+          <span class="service-tag">5–15 Min Response</span>
+          <span class="service-tag">Damage-Free Entry</span>
+          <span class="service-tag">All Lock Types</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" id="extraction">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Broken Key Extraction</h3>
+        <p>If a key breaks inside your lock, avoid glue or drilling. Keep both pieces and avoid turning the lock. We safely remove broken keys and restore full lock function without causing further damage.</p>
+        <div class="service-tags">
+          <span class="service-tag">Safe Removal</span>
+          <span class="service-tag">No Damage</span>
+          <span class="service-tag">Lock Restored</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" id="garage">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M8 22V12h8v10"/></svg>
+        </div>
+        <h3>Garage Entry Door Locks</h3>
+        <p>Garage entry doors are one of the most common access points to a home. We rekey or replace garage entry locks and match them to your house key system for complete whole-home security coverage.</p>
+        <div class="service-tags">
+          <span class="service-tag">Rekey or Replace</span>
+          <span class="service-tag">Key Matched</span>
+          <span class="service-tag">Full Coverage</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" style="border-color:var(--accent);background:linear-gradient(135deg,rgba(197,160,89,.07),rgba(123,17,19,.04))">
+        <div class="service-icon" style="background:rgba(197,160,89,.15);color:var(--accent)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3>Master Key Systems</h3>
+        <p>One master key that works everywhere, secondary keys that work only on selected doors. Convenient for families and property owners wanting controlled access throughout their home.</p>
+        <div class="service-tags">
+          <span class="service-tag">Family Convenience</span>
+          <span class="service-tag">Rental Properties</span>
+          <span class="service-tag">Controlled Access</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LOCK CHANGE DETAILS (missing content from Lock Change page) -->
+<section style="background:var(--bg-light);padding-block:80px" id="lockchange-details">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Lock Change & Replacement</div>
+      <h2 class="section-title">When You Should <span>Change Your Locks</span></h2>
+      <p class="section-sub" style="margin-inline:auto">If your locks are not working smoothly or you're unsure who has keys, replacing them can restore full peace of mind.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+
+      <!-- Old / Damaged Locks -->
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        </div>
+        <h3>Old or Damaged Locks</h3>
+        <p>Over time, locks wear down from daily use and weather exposure. Replacing worn locks prevents future lockouts and improves reliability.</p>
+        <div style="margin-top:14px;padding:14px 16px;background:var(--bg-section);border-radius:10px;border:1px solid var(--border)">
+          <p style="font-size:.82rem;font-weight:700;color:var(--primary);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">Common Signs You Need Replacement:</p>
+          <ul style="display:flex;flex-direction:column;gap:5px">
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Key hard to turn</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Lock feels loose</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Rust or corrosion</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Keys getting stuck</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Door not locking smoothly</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- After Break-Ins -->
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>After Break-Ins or Security Concerns</h3>
+        <p>If your home has experienced a break-in or attempted entry, replacing locks can restore safety and your sense of security at home.</p>
+        <div style="margin-top:14px;padding:14px 16px;background:var(--bg-section);border-radius:10px;border:1px solid var(--border)">
+          <p style="font-size:.82rem;font-weight:700;color:var(--primary);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">We Can:</p>
+          <ul style="display:flex;flex-direction:column;gap:5px">
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Replace damaged locks</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Upgrade to stronger deadbolts</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Rekey all doors</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Add additional security</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Wide Selection -->
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+        </div>
+        <h3>Wide Selection of Residential Locks</h3>
+        <p>We carry and install a variety of high-quality residential locks. We can match your existing hardware or upgrade your home's security at the same time.</p>
+        <div style="margin-top:14px;padding:14px 16px;background:var(--bg-section);border-radius:10px;border:1px solid var(--border)">
+          <p style="font-size:.82rem;font-weight:700;color:var(--primary);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">Available Hardware Includes:</p>
+          <ul style="display:flex;flex-direction:column;gap:5px">
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Standard deadbolts</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>High-security locks</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Decorative hardware</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Modern finishes and colors</li>
+            <li style="font-size:.85rem;color:var(--text-muted);display:flex;align-items:center;gap:6px"><svg width="12" height="12" viewBox="0 0 24 24" fill="var(--accent)"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Smart locks and keypad locks</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divorce / Separation callout -->
+    <div class="fade-up" style="margin-top:40px;background:linear-gradient(135deg,var(--primary-dark),var(--primary));border-radius:var(--radius-lg);padding:40px 48px;color:var(--white);display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center">
+      <div>
+        <div style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:10px">During Divorce or Separation</div>
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:12px">We Handle Sensitive Situations with Discretion</h3>
+        <p style="opacity:.88;font-size:.97rem;line-height:1.7">We frequently assist customers who need locks changed after a separation or divorce. These situations can be stressful and urgent. We handle them professionally, respectfully, and discreetly — without judgment. Our priority is making sure you feel secure and comfortable in your own home.</p>
+      </div>
+      <a href="tel:4787394334" class="btn-primary" style="white-space:nowrap;flex-shrink:0">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+
+    <!-- Rekey After Divorce callout (from Rekey page) -->
+    <div class="fade-up" style="margin-top:24px;background:var(--accent-light);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px 40px">
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start">
+        <div style="width:48px;height:48px;background:var(--primary);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--white);flex-shrink:0">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+        </div>
+        <div>
+          <div style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:6px">Rekey After Divorce or Separation</div>
+          <h3 style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--text-main);margin-bottom:8px">Regain Peace of Mind in Your Own Home</h3>
+          <p style="font-size:.92rem;color:var(--text-muted);line-height:1.7">We regularly assist homeowners going through separation or divorce who need immediate peace of mind. These situations can be stressful and urgent. We handle them professionally, discreetly, and without judgment. Our priority is helping you feel secure in your own home again.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- How long / One Key section -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px">
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>How Long Does Lock Replacement Take?</h3>
+        <p>Most residential lock changes can be completed within about one hour depending on the number of locks. We arrive prepared with the necessary hardware so the job can be completed in one visit.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+        </div>
+        <h3>One Key for the Whole House</h3>
+        <p>When replacing multiple locks, we can set them up so one key works on all doors. This eliminates carrying multiple keys and keeps access simple. We can also create master key systems if needed.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual fade-up">
+        <div class="about-card-main">
+          <div class="quote-icon">"</div>
+          <p>Over 20 years ago, I entered the locksmith industry looking for something hands-on and meaningful. What I found was a profession built on problem-solving and helping people during stressful moments.</p>
+          <p style="margin-top:14px;opacity:.85;font-size:.95rem">There is something rewarding about restoring security to someone's home — whether it's rekeying after a move, installing stronger locks, or helping someone back inside after a lockout. That commitment to doing the job properly has stayed with me ever since.</p>
+          <div class="author">
+            <div class="author-avatar">DW</div>
+            <div class="author-info">
+              <div class="name">Owner, Mobile Residential Locksmith Macon</div>
+              <div class="role">Licensed &amp; Insured · Serving Macon Since 2004</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-float-badge">
+          <span class="num">20+</span>
+          Years of<br>Experience
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <div class="section-label">About Us</div>
+        <h2 class="section-title">A Residential Locksmith <span>Focused on Home Security</span></h2>
+        <p>I'm the owner of <strong>Mobile Residential Locksmith Macon</strong>, and I personally handle most service calls. When you call us, the person who picks up the phone is the same technician who arrives at your door — I treat every customer's home like my own.</p>
+        <p>We are not a general locksmith company trying to do everything. Our primary focus is residential service. That means we understand the unique needs of homeowners — and we deliver solutions that protect what matters most to you.</p>
+        <p>Today, that same attention to detail and respect for homeowners drives every service call we handle in Macon. From new homeowners needing a quick rekey to families upgrading old, rusty locks — we've seen it all and we do it right.</p>
+        <p style="font-size:.88rem;color:var(--primary);font-weight:600;background:rgba(123,17,19,.05);border:1px solid rgba(123,17,19,.12);border-radius:8px;padding:10px 14px;display:inline-flex;align-items:center;gap:8px;"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Licensed and insured mobile locksmith serving Macon and surrounding areas.</p>
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="about-feat-icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg>
+            </div>
+            <div>
+              <h4>Upfront Pricing</h4>
+              <p>No hidden fees or surprise charges</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+            </div>
+            <div>
+              <h4>Mobile Service</h4>
+              <p>We come directly to your home</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div>
+              <h4>Residential Only</h4>
+              <p>100% focused on home security</p>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <div>
+              <h4>Genuine Care</h4>
+              <p>We respect your home and family</p>
+            </div>
+          </div>
+        </div>
+        <a href="tel:4787394334" class="btn-primary" style="margin-top:28px;display:inline-flex">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Schedule Service Today
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SMART LOCK STORY -->
+<section style="background:var(--accent-light);padding-block:60px">
+  <div class="container">
+    <!-- Rekey detailed scenarios banner -->
+    <div class="fade-up" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px 48px;margin-bottom:48px;box-shadow:var(--shadow-sm)">
+      <div style="text-align:center;margin-bottom:32px">
+        <div class="section-label" style="justify-content:center">Rekey Service — When It Matters Most</div>
+        <h2 class="section-title" style="margin-bottom:8px">Common <span>Rekey Scenarios</span></h2>
+        <p style="color:var(--text-muted);font-size:.97rem">If there is any doubt about who may have access, rekeying is the safest decision.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+        <div style="padding:18px 20px;background:var(--bg-section);border-radius:var(--radius);border:1px solid var(--border)">
+          <div style="font-weight:700;font-size:.92rem;color:var(--primary);margin-bottom:6px">🏠 Just Moved In?</div>
+          <p style="font-size:.85rem;color:var(--text-muted);line-height:1.6">Even if you received all the keys from the previous owner, there's no way to know how many copies were made. Contractors, cleaners, neighbors, or former tenants may still have keys. Rekey immediately for full control from day one.</p>
+        </div>
+        <div style="padding:18px 20px;background:var(--bg-section);border-radius:var(--radius);border:1px solid var(--border)">
+          <div style="font-weight:700;font-size:.92rem;color:var(--primary);margin-bottom:6px">🔑 Lost or Stolen Keys</div>
+          <p style="font-size:.85rem;color:var(--text-muted);line-height:1.6">If your keys are missing — dropped, stolen from a purse, or taken during a vehicle theft — time matters. Rekeying prevents unwanted access. We provide fast mobile service to secure your property quickly.</p>
+        </div>
+        <div style="padding:18px 20px;background:var(--bg-section);border-radius:var(--radius);border:1px solid var(--border)">
+          <div style="font-weight:700;font-size:.92rem;color:var(--primary);margin-bottom:6px">👥 Tenant Turnover</div>
+          <p style="font-size:.85rem;color:var(--text-muted);line-height:1.6">After a tenant moves out, rekeying ensures previous occupants no longer have access. It's the fastest and most affordable way to reset access between renters.</p>
+        </div>
+        <div style="padding:18px 20px;background:var(--bg-section);border-radius:var(--radius);border:1px solid var(--border)">
+          <div style="font-weight:700;font-size:.92rem;color:var(--primary);margin-bottom:6px">🛡️ After a Break-In</div>
+          <p style="font-size:.85rem;color:var(--text-muted);line-height:1.6">After a break-in or attempted entry, rekeying all locks is an essential step in restoring security. We can also evaluate whether a full lock upgrade is the better option for your situation.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Smart Lock Story -->
+    <div style="max-width:800px;margin-inline:auto;text-align:center" class="fade-up">
+      <div class="section-label" style="justify-content:center">A Personal Story</div>
+      <h2 class="section-title" style="margin-bottom:20px">Why Smart Locks <span>Change Lives</span></h2>
+      <div style="background:var(--white);border-radius:var(--radius-lg);padding:36px 40px;border:1px solid var(--border);box-shadow:var(--shadow-sm);text-align:left;position:relative">
+        <div style="font-size:3rem;color:var(--accent);font-family:Georgia,serif;line-height:1;margin-bottom:16px">"</div>
+        <p style="font-size:1.02rem;color:var(--text-muted);line-height:1.8;font-style:italic">One customer called after moving into a new home with young kids. Between work, school, and daily life, they were constantly worried about lost keys and getting locked out. We installed a smart lock on the front door and matched it to the rest of the house. A few days later, they told me it completely changed their routine — no more hiding spare keys or worrying about the kids forgetting them.</p>
+        <p style="font-size:1.02rem;color:var(--text-muted);line-height:1.8;font-style:italic;margin-top:14px">Moments like that are why I enjoy this work. It's not just about installing locks. It's about making everyday life easier and helping people feel secure in their homes.</p>
+        <div style="margin-top:20px;display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding-top:20px">
+          <div style="width:44px;height:44px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;color:var(--white);flex-shrink:0">ML</div>
+          <div>
+            <div style="font-weight:700;font-size:.92rem;color:var(--text-main)">Owner, Mobile Residential Locksmith Macon</div>
+            <div style="font-size:.8rem;color:var(--text-muted)">Licensed &amp; Insured · Macon, GA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<div class="why-section">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Why Choose Us</div>
+      <h2 class="section-title">Why Homeowners in Macon <span>Choose Us Over Others</span></h2>
+      <p class="section-sub" style="margin-inline:auto">Mobile Residential Locksmith Macon isn't a call center or a dispatch company. We're a real local locksmith — and there's a difference you'll feel from the very first call.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg></div>
+        <h3>Real Local Locksmith — Not a Call Center</h3>
+        <p>When you call, you reach us directly — not a national dispatcher routing your job to an unknown technician. The person who answers is the one who shows up.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <h3>No Hidden Fees — Ever</h3>
+        <p>We quote honestly, upfront, before any work begins. What we say on the phone or on-site is exactly what you pay. No surprise charges, no bait-and-switch pricing.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+        <h3>The Technician Who Answers Is the One Who Arrives</h3>
+        <p>No middlemen. No strangers. The owner personally handles most service calls — bringing 20+ years of expertise directly to your front door.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <h3>Average Response: 15–25 Minutes</h3>
+        <p>We're mobile across Macon and surrounding areas, so we move fast. Most calls are answered within 30 seconds — immediate dispatch available for emergencies.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        <h3>5★ Rated in Macon</h3>
+        <p>Hundreds of Macon homeowners have trusted us with their home security. Our reputation is built on honest work, real results, and genuine care — not marketing.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-icon"><svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div>
+        <h3>Residential Only — 100% Focused on Homes</h3>
+        <p>We don't split attention between commercial, automotive, and residential work. Your home is our specialty, and that expertise shows in every single service call.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE AREAS -->
+<div class="areas-section">
+  <div class="container">
+    <div class="section-label" style="justify-content:center">Service Coverage</div>
+    <h2 class="section-title" style="text-align:center">Serving Macon & <span>Surrounding Areas</span></h2>
+    <div class="areas-grid">
+      <div class="area-chip"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>Macon</div>
+      <div class="area-chip"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>Warner Robins</div>
+      <div class="area-chip"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>Byron</div>
+      <div class="area-chip"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>Perry</div>
+      <div class="area-chip"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>Forsyth</div>
+      <div class="area-chip"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>Nearby Communities</div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Customer Reviews</div>
+      <h2 class="section-title">What Macon Homeowners <span>Are Saying</span></h2>
+      <p class="section-sub" style="margin-inline:auto">Real experiences from real customers across Macon and surrounding communities.</p>
+    </div>
+    <div class="reviews-summary fade-up">
+      <div class="rsummary-item"><div class="rs-num">5.0</div><div class="rs-label">Average Rating</div></div>
+      <div class="rsummary-item"><div class="rs-num">200+</div><div class="rs-label">Happy Customers</div></div>
+      <div class="rsummary-item"><div class="rs-num">100%</div><div class="rs-label">Recommend Us</div></div>
+      <div class="rsummary-item"><div class="rs-num">20+</div><div class="rs-label">Years Serving Macon</div></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-header">
+          <div class="reviewer-avatar">SR</div>
+          <div class="reviewer-info">
+            <div class="reviewer-name">Sarah R.</div>
+            <div class="review-date">Macon, GA • 2 weeks ago</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Just moved into our new home and called to get the locks rekeyed. They were fast, professional, and explained everything clearly. Now I have peace of mind knowing only our family has keys. Highly recommend!</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Review
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-header">
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a5276,#2980b9)">JM</div>
+          <div class="reviewer-info">
+            <div class="reviewer-name">James M.</div>
+            <div class="review-date">Warner Robins, GA • 1 month ago</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Locked out at 9pm and they came within 20 minutes. Very professional, no damage to my door, and the price was fair. Exactly what you need in an emergency. Will keep their number saved!</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Review
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-header">
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1e8449,#27ae60)">LT</div>
+          <div class="reviewer-info">
+            <div class="reviewer-name">Linda T.</div>
+            <div class="review-date">Macon, GA • 3 weeks ago</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Going through a difficult separation and needed my locks changed quickly. They were so professional and discreet. No judgment, just excellent work. I felt safe again in my own home that same day. Thank you!</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Review
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-header">
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#7d3c98,#9b59b6)">DK</div>
+          <div class="reviewer-info">
+            <div class="reviewer-name">David K.</div>
+            <div class="review-date">Forsyth, GA • 2 months ago</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Had a broken key stuck in my front door lock. Called and they extracted it cleanly without any damage. Also rekeyed all three doors while they were there. Very knowledgeable and reasonably priced. Great experience.</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Review
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-header">
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#d35400,#e67e22)">MB</div>
+          <div class="reviewer-info">
+            <div class="reviewer-name">Maria B.</div>
+            <div class="review-date">Perry, GA • 6 weeks ago</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Installed a smart lock for us and keyed it to match the rest of the house. The whole family loves it — no more worrying about lost keys or kids forgetting them after school. The service was fast and professional. Highly recommend!</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Review
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-header">
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a252f,#2c3e50)">RJ</div>
+          <div class="reviewer-info">
+            <div class="reviewer-name">Robert J.</div>
+            <div class="review-date">Byron, GA • 1 month ago</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Called after our home was broken into. They came out quickly, replaced the damaged lock, upgraded our deadbolt, and rekeyed everything. They really put our family's safety first and the pricing was completely fair. 10/10.</p>
+        <div class="review-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Review
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUPONS -->
+<section id="coupons">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Special Offers</div>
+      <h2 class="section-title">Save on Your Next <span>Locksmith Service</span></h2>
+      <p class="section-sub" style="margin-inline:auto">Limited-time offers for Macon homeowners. Mention the code when you call to redeem.</p>
+    </div>
+    <div class="coupons-grid">
+      <div class="coupon-card fade-up">
+        <div class="coupon-top">
+          <div class="coupon-badge">🏠 New Homeowner Special</div>
+          <div class="coupon-value">$15 <span>OFF</span></div>
+          <div class="coupon-desc">Complete whole-home rekey service</div>
+        </div>
+        <div class="coupon-bottom">
+          <h4>New Homeowner Rekey Discount</h4>
+          <p>Moving into a new home? Get $15 off when we rekey all your exterior locks. Ensure only your family has access from day one.</p>
+          <div class="coupon-code-row">
+            <div class="coupon-code">NEWHOME15</div>
+            <button class="copy-btn" onclick="copyCode('NEWHOME15', this)">Copy</button>
+          </div>
+          <div class="coupon-expires">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Valid through April 30, 2026 • One per household
+          </div>
+        </div>
+      </div>
+      <div class="coupon-card fade-up">
+        <div class="coupon-top" style="background:var(--accent);color:var(--primary-dark)">
+          <div class="coupon-badge" style="color:var(--primary-dark)">⚡ Emergency Service</div>
+          <div class="coupon-value" style="color:var(--primary-dark)">$10 <span style="opacity:.7">OFF</span></div>
+          <div class="coupon-desc" style="color:var(--primary-dark);opacity:.8">Residential lockout calls</div>
+        </div>
+        <div class="coupon-bottom">
+          <h4>Emergency Lockout Savings</h4>
+          <p>Locked out of your home? Save $10 on any residential emergency lockout service call in the Macon area.</p>
+          <div class="coupon-code-row">
+            <div class="coupon-code">LOCKOUT10</div>
+            <button class="copy-btn" onclick="copyCode('LOCKOUT10', this)">Copy</button>
+          </div>
+          <div class="coupon-expires">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Valid through May 31, 2026 • Cannot combine offers
+          </div>
+        </div>
+      </div>
+      <div class="coupon-card fade-up">
+        <div class="coupon-top" style="background:linear-gradient(135deg,var(--primary-dark),var(--primary))">
+          <div class="coupon-badge">🔒 Lock Upgrade Bundle</div>
+          <div class="coupon-value">FREE <span>Rekey</span></div>
+          <div class="coupon-desc">With any 2+ lock replacement purchase</div>
+        </div>
+        <div class="coupon-bottom">
+          <h4>Upgrade & Rekey Bundle</h4>
+          <p>Replace 2 or more locks and receive a complimentary rekey of your remaining exterior doors — a great value for whole-home security.</p>
+          <div class="coupon-code-row">
+            <div class="coupon-code">BUNDLE2024</div>
+            <button class="copy-btn" onclick="copyCode('BUNDLE2024', this)">Copy</button>
+          </div>
+          <div class="coupon-expires">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Valid through June 30, 2026 • Applies to residential only
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center;max-width:600px;margin-inline:auto">
+      <div class="section-label" style="justify-content:center">Have Questions?</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <p class="section-sub" style="margin-inline:auto">Everything you need to know about our residential locksmith services in Macon, GA.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How much does it cost to rekey a house in Macon?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The cost depends on how many locks you have and the type of hardware. At <strong>Mobile Residential Locksmith Macon</strong>, we always provide clear pricing before starting any work. If we can quote over the phone, we will. If we need to see the locks first, we will give you the exact price on-site before beginning. No surprises and no hidden charges.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Should I rekey or change my locks after moving?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Rekeying is usually the best first step after moving into a new home. Even if the previous owner gave you all the keys, you never know who still has copies. Rekeying ensures only you and your family have working keys. If locks are old, damaged, or outdated, then replacing them may be the better option. We can advise you on-site.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How long does it take to rekey a house?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Most homes can be rekeyed within 1–2 hours depending on the number of locks. A professional locksmith can usually rekey 6–8 locks in one visit. If you want master key systems or multiple key setups, it may take slightly longer.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can all locks be set to work with one key?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. In most homes, we can rekey all locks so one key works everywhere. We can also create master key systems where one main key works on all doors and secondary keys work only on selected doors. This is convenient for families and property owners.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What should I do if I lost my house keys?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">If your house keys are lost or stolen, it's best to rekey your locks as soon as possible. This prevents anyone who finds or has your keys from entering your home. We provide fast mobile service across Macon to secure your property quickly.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What if my key broke inside the lock?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Do not use glue or try to drill the lock. Keep both pieces of the broken key if possible and avoid turning the lock. We can safely extract the broken key and restore the lock without causing further damage in most cases.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How long does a house lockout take?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Most residential lockouts take about 5–15 minutes depending on the type of lock. Our goal is always damage-free entry whenever possible. We use professional tools to unlock doors safely and efficiently.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you install smart locks?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. We install and configure smart locks for homeowners across Macon. We can supply and install trusted brands and often key them to match the rest of your home so you still keep one key for everything.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can you change or rekey garage door locks?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Garage entry doors are one of the most important security points of a home. We can rekey, replace, or upgrade garage door locks and match them to your house key system so everything works under one key.</div></div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can you rekey old or rusty locks?
+          <span class="faq-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">In many cases, yes. If the hardware is still in good condition, we can rekey it and restore smooth operation. If a lock is too worn or damaged, we will recommend replacement and explain your options before beginning any work.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & MAP -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Get In Touch</div>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <p class="section-sub" style="margin-inline:auto">Have a question or need service? We're available 24/7 — call us for the fastest response, or fill out the form below.</p>
+    </div>
+    <div class="contact-grid">
+
+      <!-- LEFT: Info Cards -->
+      <div class="fade-up">
+        <div class="ci-card">
+          <div class="cic-icon">📞</div>
+          <div>
+            <div class="cic-label">Business Phone Number</div>
+            <div class="cic-value"><a href="tel:4787394334" style="color:var(--primary)">(478) 739-4334</a></div>
+            <div class="cic-sub">Call for fastest response — always answered</div>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="cic-icon">📍</div>
+          <div>
+            <div class="cic-label">Business Address</div>
+            <div class="cic-value">3055 Vineville Ave</div>
+            <div class="cic-sub">Macon, GA 31204</div>
+            <div class="cic-sub" style="margin-top:4px">Mobile service throughout Macon area</div>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="cic-icon">🌐</div>
+          <div>
+            <div class="cic-label">Website</div>
+            <div class="cic-value"><a href="https://macon24hrmobileresidentialrekeylocksmith.com" target="_blank" rel="noopener" style="color:var(--primary);font-size:.9rem">macon24hrmobileresidentialrekeylocksmith.com</a></div>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="cic-icon">🕐</div>
+          <div>
+            <div class="cic-label">Hours Open</div>
+            <div class="cic-value">24 / 7</div>
+            <div class="cic-sub" style="margin-top:7px"><span class="hours-badge">🟢 Always Open</span></div>
+          </div>
+        </div>
+        <div class="ci-card">
+          <div class="cic-icon">💳</div>
+          <div>
+            <div class="cic-label">Payment Methods</div>
+            <div class="cic-value">Cash and all major credit cards</div>
+            <div class="cic-sub">No hidden fees — upfront pricing always</div>
+          </div>
+        </div>
+        <!-- Map -->
+        <div class="map-container" style="margin-top:16px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.3177693456754!2d-83.67726762484897!3d32.84739017359655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f1d4f66f1a5e3b%3A0x5e4a4f0a5e4a4f0a!2s3055+Vineville+Ave%2C+Macon%2C+GA+31204!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            width="100%" height="260" style="border:0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Macon Mobile Residential Locksmith Location"></iframe>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="contact-form fade-up">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="John" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Smith" autocomplete="family-name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" placeholder="(478) 000-0000" autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="john@example.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service">
+            <option value="">Select a service...</option>
+            <option>Residential – House Lockout</option>
+            <option>Residential – Lock Rekeying</option>
+            <option>Residential – Lock Installation</option>
+            <option>Residential – Smart Lock Setup</option>
+            <option>Residential – Deadbolt Upgrade</option>
+            <option>Emergency Service</option>
+            <option>Keypad Lock Installation</option>
+            <option>Keypad Lock Repair / Reprogramming</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Describe your situation or ask a question..."></textarea>
+        </div>
+        <div class="form-group consent-group">
+          <label class="consent-checkbox">
+            <input type="checkbox" id="consent" name="consent">
+            <span>By clicking the "Send" button, you agree to receive text messages from Macon Mobile Residential Rekey Locksmith regarding your estimate and scheduling. Msg &amp; data rates may apply.</span>
+          </label>
+        </div>
+        <button class="submit-btn" type="button" onclick="handleFormSubmit(this)">
+          📨 SEND MESSAGE
+        </button>
+        <p class="form-note">For emergencies, please call directly: <a href="tel:4787394334">(478) 739-4334</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="container" style="position:relative;z-index:1">
+    <div class="section-label" style="justify-content:center;color:var(--accent)">Ready to Get Started?</div>
+    <h2>Secure Your Macon Home Today</h2>
+    <p><strong>Mobile Residential Locksmith Macon</strong> — professional service, clear pricing, and genuine respect for your home. Licensed and insured. Call now for a free phone quote.</p>
+    <div>
+      <a href="tel:4787394334" class="phone-link">
+        <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (478) 739-4334
+      </a>
+    </div>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a href="tel:4787394334" class="btn-primary">Call for Free Quote</a>
+      <a href="#services" class="btn-outline">View All Services</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-top">Macon 24hr Mobile Residential Rekey Locksmith</div>
+        <div class="logo-sub">Professional Home Security Since 2004</div>
+        <p>Helping homeowners across Macon feel safe, secure, and confident about who has access to their property. Residential locksmith services only.</p>
+        <p style="margin-top:10px;font-size:.82rem;color:var(--accent);font-weight:600;display:flex;align-items:center;gap:6px"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Licensed &amp; Insured Mobile Locksmith</p>
+        <a href="tel:4787394334" class="footer-phone">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          (478) 739-4334
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#rekey">Rekey Service</a></li>
+          <li><a href="#lockchange">Lock Change & Replacement</a></li>
+          <li><a href="#installation">Fresh Lock Installation</a></li>
+          <li><a href="#smartlock">Smart Lock Installation</a></li>
+          <li><a href="#lockout">House Lockout Service</a></li>
+          <li><a href="#extraction">Broken Key Extraction</a></li>
+          <li><a href="#garage">Garage Door Locks</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#coupons">Coupons & Offers</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <h4 style="margin-top:24px">Service Areas</h4>
+        <ul>
+          <li><a href="#contact">Macon, GA</a></li>
+          <li><a href="#contact">Warner Robins</a></li>
+          <li><a href="#contact">Byron</a></li>
+          <li><a href="#contact">Perry</a></li>
+          <li><a href="#contact">Forsyth</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Macon 24hr Mobile Residential Rekey Locksmith · 3055 Vineville Ave, Macon, GA 31204</span>
+      <span>macon24hrmobileresidentialrekeylocksmith.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CALL BUTTON (mobile) -->
+<a id="floatCall" href="tel:4787394334" aria-label="Call now">
+  <span class="fc-dot"></span>
+  <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  Call Now — (478) 739-4334
+</a>
+
+<!-- SCROLL TOP -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script>
+// Form submit
+function handleFormSubmit(btn){
+  const phone=document.getElementById('phone').value.trim();
+  const consent=document.getElementById('consent').checked;
+  if(!phone){document.getElementById('phone').focus();document.getElementById('phone').style.borderColor='var(--primary)';return}
+  if(!consent){alert('Please agree to the terms before sending.');return}
+  btn.textContent='✅ Message Sent!';btn.style.background='#16a34a';btn.disabled=true;
+  setTimeout(()=>{btn.innerHTML='📨 SEND MESSAGE';btn.style.background='';btn.disabled=false;},4000);
+}
+
+// Navbar scroll
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>80);
+  document.getElementById('scrollTop').classList.toggle('visible',window.scrollY>400);
+},{passive:true});
+
+// Dropdown
+function toggleDropdown(btn){
+  const menu=btn.nextElementSibling;
+  const isOpen=menu.classList.contains('open');
+  document.querySelectorAll('.dropdown-menu').forEach(m=>m.classList.remove('open'));
+  document.querySelectorAll('.dropdown-btn').forEach(b=>{b.classList.remove('open');b.setAttribute('aria-expanded','false')});
+  if(!isOpen){menu.classList.add('open');btn.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.nav-links > li')){
+    document.querySelectorAll('.dropdown-menu').forEach(m=>m.classList.remove('open'));
+    document.querySelectorAll('.dropdown-btn').forEach(b=>{b.classList.remove('open');b.setAttribute('aria-expanded','false')});
+  }
+});
+
+// Mobile menu
+function toggleMobile(btn){
+  btn.classList.toggle('open');
+  document.getElementById('mobileMenu').classList.toggle('open');
+  btn.setAttribute('aria-expanded', btn.classList.contains('open'));
+}
+function closeMobile(){
+  document.querySelector('.hamburger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+function toggleMobileServices(btn){
+  const sub=document.getElementById('mobileServices');
+  sub.style.display=sub.style.display==='none'?'block':'none';
+}
+
+// FAQ
+function toggleFaq(btn){
+  const item=btn.parentElement;
+  const answer=item.querySelector('.faq-answer');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>{
+    i.classList.remove('open');
+    i.querySelector('.faq-answer').style.maxHeight='0';
+  });
+  if(!isOpen){item.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px'}
+}
+
+// Copy coupon code
+function copyCode(code,btn){
+  navigator.clipboard.writeText(code).then(()=>{
+    const orig=btn.textContent;btn.textContent='Copied!';btn.style.background='#16a34a';
+    setTimeout(()=>{btn.textContent=orig;btn.style.background=''},2000);
+  }).catch(()=>{
+    btn.textContent='Copied!';
+    setTimeout(()=>{btn.textContent='Copy'},2000);
+  });
+}
+
+// Intersection Observer for fade-up animations
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
