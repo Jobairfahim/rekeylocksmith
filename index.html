@@ -21,7 +21,7 @@
   --accent-hover: #b08d45;
   --accent-light: #f0e6cc;
   --text-main: #1a1a2e;
-  --text-muted: #6b7280;
+  --text-muted: #333538;
   --bg-light: #fdf8f2;
   --bg-section: #f9f4ee;
   --white: #ffffff;
@@ -53,9 +53,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--header-h);background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm);transition:all .3s ease;will-change:transform}
 #navbar.scrolled{height:64px;box-shadow:var(--shadow-md)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%}
-.nav-logo{display:flex;flex-direction:column;gap:1px}
-.nav-logo .logo-top{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--primary);line-height:1.1}
-.nav-logo .logo-sub{font-size:.7rem;color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.nav-logo{display:flex;align-items:center;justify-content:center;height:100%;text-decoration:none}
+.nav-logo img{height:100px;width:auto;transition:all .3s ease}
+#navbar.scrolled .nav-logo img{height:100px}
 .nav-links{display:flex;align-items:center;gap:6px}
 .nav-links > li{position:relative}
 .nav-links a,.nav-links button{font-size:.92rem;font-weight:600;color:var(--text-main);padding:8px 14px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:5px;background:none}
@@ -114,6 +114,13 @@ h2.section-title{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.
 h2.section-title span{color:var(--primary)}
 .section-sub{font-size:1.05rem;color:var(--text-muted);max-width:600px}
 .section-header{margin-bottom:52px}
+
+/* ── BRAND SCROLLER ── */
+.brand-scroller{background:var(--bg-section);padding-block:40px;overflow:hidden}
+.brand-scroller-inner{display:flex;animation:scroll 15s linear infinite}
+.brand-scroller-inner:hover{animation-play-state:paused}
+.brand-item{flex:0 0 auto;padding:0 40px;display:flex;align-items:center;justify-content:center;min-width:150px;font-size:1.1rem;font-weight:600;color:var(--text-muted);white-space:nowrap}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ── TRUST BAR ── */
 .trust-bar{background:var(--primary);padding-block:20px}
@@ -267,7 +274,10 @@ h2.section-title span{color:var(--primary)}
 /* ── FOOTER ── */
 footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px}
-.footer-brand .logo-top{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--accent);margin-bottom:4px}
+.footer-brand{display:flex;flex-direction:column;gap:12px}
+.footer-brand .logo-container{display:flex;align-items:flex-start;justify-content:flex-start;margin-bottom:8px}
+.footer-brand .logo-container img{height:150px;width:auto}
+.footer-brand .logo-top{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--accent);margin-bottom:0px}
 .footer-brand .logo-sub{font-size:.72rem;color:rgba(255,255,255,.5);letter-spacing:.08em;text-transform:uppercase}
 .footer-brand p{margin-top:14px;font-size:.88rem;opacity:.65;line-height:1.6}
 .footer-brand .footer-phone{margin-top:16px;display:flex;align-items:center;gap:8px;font-weight:700;font-size:1rem;color:var(--accent)}
@@ -291,6 +301,8 @@ footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
 @media(max-width:768px){
   :root{--header-h:var(--header-h-mobile)}
   section{padding-block:56px}
+  .brand-scroller{padding-block:30px}
+  .brand-item{font-size:.95rem;min-width:120px;padding:0 30px}
   .nav-links,.nav-cta{display:none}
   #floatCall{display:inline-flex}
   #scrollTop{bottom:90px}
@@ -322,8 +334,7 @@ footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
 <nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="container nav-inner">
     <a href="#home" class="nav-logo" aria-label="Home">
-      <span class="logo-top">Macon 24hr Locksmith</span>
-      <span class="logo-sub">Mobile Residential Rekey</span>
+      <img src="assets/images/logo.webp" alt="Macon 24hr Locksmith Logo" loading="lazy">
     </a>
     <ul class="nav-links" role="menubar">
       <li role="none"><a href="#home" role="menuitem">Home</a></li>
@@ -430,6 +441,8 @@ footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
     </div>
   </div>
 </section>
+
+
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
@@ -765,6 +778,47 @@ footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
         </a>
       </div>
     </div>
+  </div>
+</section>
+<!-- BRAND SCROLLER -->
+<section class="brand-scroller">
+  <div class="container">
+    <div class="section-header fade-up" style="text-align:center">
+      <div class="section-label">Trusted By</div>
+      <h2 class="section-title">Brands We <span>Serve</span></h2>
+      <p class="section-sub" style="margin:0 auto">Expert service for all major lock brands - from traditional to smart locks</p>
+    </div>
+  </div>
+  <div class="brand-scroller-inner">
+    <div class="brand-item">Schlage</div>
+    <div class="brand-item">Kwikset</div>
+    <div class="brand-item">Yale</div>
+    <div class="brand-item">Master Lock</div>
+    <div class="brand-item">ASSA ABLOY</div>
+    <div class="brand-item">Medeco</div>
+    <div class="brand-item">Mul-T-Lock</div>
+    <div class="brand-item">Baldwin</div>
+    <div class="brand-item">August</div>
+    <div class="brand-item">Nest x Yale</div>
+    <div class="brand-item">Level Lock</div>
+    <div class="brand-item">Ultraloq</div>
+    <div class="brand-item">Eufy Security</div>
+    <div class="brand-item">Wyze Lock</div>
+    <!-- Duplicate for seamless loop -->
+    <div class="brand-item">Schlage</div>
+    <div class="brand-item">Kwikset</div>
+    <div class="brand-item">Yale</div>
+    <div class="brand-item">Master Lock</div>
+    <div class="brand-item">ASSA ABLOY</div>
+    <div class="brand-item">Medeco</div>
+    <div class="brand-item">Mul-T-Lock</div>
+    <div class="brand-item">Baldwin</div>
+    <div class="brand-item">August</div>
+    <div class="brand-item">Nest x Yale</div>
+    <div class="brand-item">Level Lock</div>
+    <div class="brand-item">Ultraloq</div>
+    <div class="brand-item">Eufy Security</div>
+    <div class="brand-item">Wyze Lock</div>
   </div>
 </section>
 
@@ -1291,8 +1345,9 @@ footer{background:var(--text-main);color:var(--white);padding-block:48px 24px}
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo-top">Macon 24hr Mobile Residential Rekey Locksmith</div>
-        <div class="logo-sub">Professional Home Security Since 2004</div>
+        <div class="logo-container">
+          <img src="assets/images/logo.webp" alt="Macon 24hr Locksmith Logo" loading="lazy">
+        </div>
         <p>Helping homeowners across Macon feel safe, secure, and confident about who has access to their property. Residential locksmith services only.</p>
         <p style="margin-top:10px;font-size:.82rem;color:var(--accent);font-weight:600;display:flex;align-items:center;gap:6px"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Licensed &amp; Insured Mobile Locksmith</p>
         <a href="tel:4787394334" class="footer-phone">
