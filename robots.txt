@@ -1,0 +1,42 @@
+# robots.txt for Macon Mobile Residential Rekey Locksmith
+# https://maconmobileresidentialrekeylocksmith.com/
+
+User-agent: *
+Allow: /
+
+# Prioritize important pages
+Crawl-delay: 1
+
+# Block unnecessary crawling of admin/system files
+Disallow: /.htaccess
+Disallow: /404.html
+Disallow: /403.html
+Disallow: /500.html
+Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /*.bak$
+Disallow: /*.sql$
+
+# Allow search engines to crawl all important content
+Allow: /assets/
+Allow: /assets/images/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.webp
+Allow: /*.ico
+
+# Sitemap location
+Sitemap: https://maconmobileresidentialrekeylocksmith.com/sitemap.xml
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
